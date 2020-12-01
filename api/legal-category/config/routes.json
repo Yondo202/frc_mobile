@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/legal-categories",
+      "handler": "legal-category.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/legal-categories/count",
+      "handler": "legal-category.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/legal-categories/:id",
+      "handler": "legal-category.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/legal-categories",
+      "handler": "legal-category.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/legal-categories/:id",
+      "handler": "legal-category.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/legal-categories/:id",
+      "handler": "legal-category.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

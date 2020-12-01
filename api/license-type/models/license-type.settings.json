@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "license_types",
+  "info": {
+    "name": "license_type",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "sort_num": {
+      "type": "biginteger"
+    },
+    "main_menu": {
+      "model": "main-menu",
+      "via": "license_types"
+    },
+    "catigory": {
+      "type": "string"
+    }
+  }
+}

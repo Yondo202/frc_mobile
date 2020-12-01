@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_menus",
+  "info": {
+    "name": "main-menu"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "legal_categories": {
+      "via": "main_menu",
+      "collection": "legal-category"
+    },
+    "license_types": {
+      "via": "main_menu",
+      "collection": "license-type"
+    },
+    "comp_categories": {
+      "via": "main_menu",
+      "collection": "comp-category"
+    }
+  }
+}

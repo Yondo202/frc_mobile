@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/seo-materials",
+      "handler": "seo-material.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seo-materials/count",
+      "handler": "seo-material.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/seo-materials/:id",
+      "handler": "seo-material.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/seo-materials",
+      "handler": "seo-material.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/seo-materials/:id",
+      "handler": "seo-material.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/seo-materials/:id",
+      "handler": "seo-material.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_lists",
+  "info": {
+    "name": "News_list"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "news_header": {
+      "type": "string"
+    },
+    "news_date": {
+      "type": "date"
+    },
+    "news_image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "news_text": {
+      "type": "richtext"
+    },
+    "news_category": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "materials",
+  "info": {
+    "name": "material",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "mat_description": {
+      "type": "string"
+    },
+    "mat_date": {
+      "type": "date"
+    },
+    "mat_filename": {
+      "type": "string"
+    },
+    "mat_body": {
+      "type": "string"
+    },
+    "mat_type": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "legal_category": {
+      "model": "legal-category",
+      "via": "materials"
+    }
+  }
+}

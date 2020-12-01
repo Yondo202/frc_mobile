@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comp_categories",
+  "info": {
+    "name": "comp_category"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "router": {
+      "type": "string"
+    },
+    "main_menu": {
+      "model": "main-menu",
+      "via": "comp_categories"
+    },
+    "companies": {
+      "via": "comp_category",
+      "collection": "company"
+    }
+  }
+}

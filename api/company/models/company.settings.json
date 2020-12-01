@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companies",
+  "info": {
+    "name": "company",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "com_name": {
+      "type": "string"
+    },
+    "register_num": {
+      "type": "string"
+    },
+    "director_name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "web_addr": {
+      "type": "string"
+    },
+    "email_addr": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "branch_qty": {
+      "type": "string"
+    },
+    "delegate_qty": {
+      "type": "string"
+    },
+    "emp_qty": {
+      "type": "string"
+    },
+    "com_loc_latt": {
+      "type": "float"
+    },
+    "com_loc_longt": {
+      "type": "float"
+    },
+    "category_ident": {
+      "type": "biginteger"
+    },
+    "about": {
+      "type": "string"
+    },
+    "issued": {
+      "type": "string"
+    },
+    "comp_category": {
+      "model": "comp-category",
+      "via": "companies"
+    }
+  }
+}
